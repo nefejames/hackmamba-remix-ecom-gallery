@@ -5,10 +5,7 @@ export default function Home() {
     const productGallery = cloudinary.galleryWidget({
       container: "#product-gallery",
       cloudName: "nefejames",
-      mediaAssets: [
-        { tag: "dog-picture", mediaType: "image" },
-        { tag: "dog-video", mediaType: "video" },
-      ],
+      mediaAssets: [{ tag: "dog-picture", mediaType: "image" }],
     });
 
     productGallery.render();
